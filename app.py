@@ -23,9 +23,13 @@ def index():
         if stroke > pageBase:
             result = 'Такой строки нет!'
         elif (page * pageBase) > len(data):
+            
             result = 'Больше чем страниц в книге'
         elif page == 2:
-            result = data[pageBase + stroke - 1]
+            if data[stroke] == '\n':
+                result = 'Неизвестность'
+            else:
+                result = data[pageBase + stroke - 1]
 
         elif page == 1:
             if data[stroke] == '\n':
@@ -33,7 +37,7 @@ def index():
             else:
                 result = data[stroke]
         elif page > 2:
-            if data[pageBaseMult - 1] == '':
+            if data[pageBaseMult - 1] == '\n':
                 result = 'Неизвестность'
             else:
                 result = data[pageBaseMult - 1]
