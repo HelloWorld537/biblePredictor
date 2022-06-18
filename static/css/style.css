@@ -1,0 +1,44 @@
+body {
+    background: #130f40;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+h1 {
+    margin-top: -170px;
+    margin-bottom: 100px;
+}
+.hi {
+    margin-bottom: 20px;
+}
+
+input[name="stroke"] {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+img {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    width: 250px;
+    height: 300px;
+}

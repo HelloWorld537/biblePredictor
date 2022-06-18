@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+main page
+{% endblock %}
+
+{% block body %}
+
+    <h1>Гадание на Библии</h1> 
+    <img src="{{url_for('static', filename='img/hi.png')}}" alt="">
+    <h2 class="hi">Выберите строку</h2>
+    <form action="" method="post">
+        <input type="text" name="stroke" required>
+        <h2>Выберите страницу</h2>
+        <input type="text" name="page" required>
+        <input type="submit" value="Начать гадание">
+    </form>
+    <h3>Ваше пророчество</h3>
+    <h4>{{result}}</h4>
+
+
+{% endblock %}   
